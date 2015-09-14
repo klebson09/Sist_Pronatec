@@ -12,22 +12,57 @@
             table, th, td {
                 border: 1px solid black;
                 border-collapse: collapse;
+                font-weight: bold;
+            }
+            .normal{
+                font-weight: normal;
+            }
+            .linha_top{
+                border-top-width: 3px;
+                border-top-style: solid;
+            }
+            #linha_left{
+                border-left-width: 3px;
+                border-left-style: solid;
             }
             th, td {
                 padding: 5px;
             }
-            div.img { 
-                width: 500px;    /* largura da imagem */
-                height: 350px;   /*  altura da imagem  */
+            .img{
+                background: red;
+                height:150px;
             }
-            div.img + img { 
-                width:100px;
-                height:100px;
+            #logo_ifpe{ 
+                width:250px;
+                height:90px; 
                 position:absolute;
-                top:50%;
-                left:50%;
-                margin-top:-50px;
-                margin-left:-50px;
+                margin: 50px;
+
+            }
+
+            #logo_minist{ 
+                width:200px;
+                height:80px; 
+                position:absolute;
+                margin-left:680px; 
+                margin-top: 50px;
+            }
+            #logo_pronatec{
+                width:250px;
+                height:100px; 
+                position:absolute;
+                margin-left:1200px; 
+                margin-top: 50px;
+            }
+            .titulo{
+                text-align:center;
+                font-size:small;
+            }
+            h1{
+                font-size: medium;
+            }
+            .rodape{
+                text-align: center;
             }
         </style>
 
@@ -36,12 +71,12 @@
 
 
         <div class="img">
-            <img src="imagens/logo_ifpe.png">
-            <img src="imagens/ministerio_edu.gif">
-            <img src="imagens/logo_pronatec.png">
+            <img id="logo_ifpe" src="imagens/logo_ifpe.png"> 
+            <img  id="logo_minist" src="imagens/ministerio_edu.gif">
+            <img id="logo_pronatec" src="imagens/logo_pronatec.png">
 
         </div>
-        <div>
+        <div class="titulo">
             Ministério da Educação / FNDE <br>
             Programa Nacional de Acesso ao Ensino Técnico e Emprego <br>
             Instituto Federal de Educação, Ciência e Tecnologia de Pernanbuco Campus Recife <br>
@@ -81,13 +116,13 @@
                 <td rowspan="2">Nº</td>
                 <td rowspan="2"> ALUNO </td>
                 <td>MÊS</td>
-                <td colspan="2">OUTUBRO/2015</td>
+                <td  id="linha_left" class="linha_top" colspan="2">OUTUBRO/2015</td>
             </tr>
 
             <tr>
                 <td>DIA</td>
                 <td>
-                    <table border="1" style="width:100%">                        <tr >
+                    <table class="tabela2" border="1" style="width:100%">                        <tr >
                             <td>  </td>
                             <td>  </td>
                             <td>  </td>
@@ -113,8 +148,8 @@
             </tr>
 
             <tr>
-                <td rowspan="2">1</td>
-                <td colspan="2"> KLÉBSON LEONARDO S. SILVA </td>
+                <td rowspan="2" class="normal">1</td>
+                <td colspan="2" class="normal"> KLÉBSON LEONARDO S. SILVA </td>
                 <td colspan="2">
 
                     <table border="1" style="width:100%">                        <tr >
@@ -146,8 +181,10 @@
         </table>
 
         <br>
-        Av. Prof Luiz Freire, 500 Cidade Universitária - Recife/PE - CEP:50740-540 Telefone:(81) 2125-1672 <br>
-        E-mail: pronatec@recife.ifpe.edu.br
+        <div class="rodape">
+            Av. Prof Luiz Freire, 500 Cidade Universitária - Recife/PE - CEP:50740-540 Telefone:(81) 2125-1672 <br>
+            E-mail: pronatec@recife.ifpe.edu.br
+        </div>
 
     </body>
 </html>
