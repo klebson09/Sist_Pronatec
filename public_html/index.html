@@ -14,8 +14,9 @@
                 border-collapse: collapse;
                 font-weight: bold;
             }
-            .normal{
+            #normal{
                 font-weight: normal;
+                font-size: 16px;
             }
             .linha_top{
                 border-top-width: 3px;
@@ -35,17 +36,18 @@
             #logo_ifpe{ 
                 width:250px;
                 height:90px; 
-                position:absolute;
-                margin: 50px;
+                position: relative;
+                left: 50px;
+                top: 30px;
 
             }
 
             #logo_minist{ 
                 width:200px;
                 height:80px; 
-                position:absolute;
-                margin-left:680px; 
-                margin-top: 50px;
+                position:relative;
+                left: 50px;
+                top: 50px;
             }
             #logo_pronatec{
                 width:250px;
@@ -62,8 +64,28 @@
                 font-size: medium;
             }
             .rodape{
+                float: none;
                 text-align: center;
             }
+            .tabela2{
+                float: left;
+                padding: 25px;
+                width: 50%;
+            }
+            .tabela3{
+                border-style: solid;
+                border-width: 2px;
+                width: 50%;
+            }
+            .celulaFixa{
+                width: 80px;
+                height: 26px;
+            }
+            #row{
+                border-bottom-style: solid;
+                border-width: 2px;
+            }
+
         </style>
 
     </head>
@@ -111,75 +133,66 @@
         </table>
 
         <br>
-        <table border="1" style="width:100%">
+        <table class="tabela2" border="1">
             <tr>
-                <td rowspan="2">Nº</td>
-                <td rowspan="2"> ALUNO </td>
-                <td>MÊS</td>
-                <td  id="linha_left" class="linha_top" colspan="2">OUTUBRO/2015</td>
+                <td rowspan="2" colspan="1">Nº</td>
+                <td rowspan="2" colspan="13"> ALUNO </td>
+                <td colspan="2">MÊS</td>
+            </tr>
+            <tr>
+                <td colspan="2">DIA</td>
+            </tr>
+            <tr class="celulaFixa">
+                <td id="normal">1</td>
+                <td colspan="15" id="normal"> KLÉBSON LEONARDO S. SILVA </td>
             </tr>
 
-            <tr>
-                <td>DIA</td>
-                <td>
-                    <table class="tabela2" border="1" style="width:100%">                        <tr >
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                        </tr>
 
-
-
-                    </table>
-                </td>
-            </tr>
-
-            <tr>
-                <td rowspan="2" class="normal">1</td>
-                <td colspan="2" class="normal"> KLÉBSON LEONARDO S. SILVA </td>
-                <td colspan="2">
-
-                    <table border="1" style="width:100%">                        <tr >
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                            <td>  </td>
-                        </tr>
-
-
-
-                    </table>
-
-                </td>
-            </tr>
 
         </table>
-
+        <div>
+            <table class="tabela3" border="1">  
+                <tr class="celulaFixa">
+                    <td  id="linha_left" class="linha_top" colspan="16">OUTUBRO/2015</td>
+                </tr>
+                <tr id="row" class="celulaFixa">
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                </tr>
+                <tr class="celulaFixa">
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                </tr>
+            </table>
+        </div>
         <br>
         <div class="rodape">
             Av. Prof Luiz Freire, 500 Cidade Universitária - Recife/PE - CEP:50740-540 Telefone:(81) 2125-1672 <br>
