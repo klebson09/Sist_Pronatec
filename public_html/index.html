@@ -13,10 +13,11 @@
                 border: 1px solid black;
                 border-collapse: collapse;
                 font-weight: bold;
+                font-size: 11px;
             }
             #normal{
                 font-weight: normal;
-                font-size: 16px;
+                font-size: 10px;
             }
             .linha_top{
                 border-top-width: 3px;
@@ -30,31 +31,40 @@
                 padding: 5px;
             }
             .img{
-                background: red;
-                height:150px;
+                height:100px;
+            }
+            .centro{
+                background: blue;
+                margin: 0 auto;
+                width: 50%;
             }
             #logo_ifpe{ 
-                width:250px;
-                height:90px; 
-                position: relative;
-                left: 50px;
-                top: 30px;
+                width:200px;
+                height:80px; 
+                margin-left: 10px;
+                position: absolute;
+                left: 0%;
+                top: 2%;
 
             }
 
             #logo_minist{ 
-                width:200px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                    width:150px;
                 height:80px; 
-                position:relative;
-                left: 50px;
-                top: 50px;
+/*                position: relative;
+                left: 40%;
+                top: 2%;*/
             }
             #logo_pronatec{
-                width:250px;
-                height:100px; 
+                width:200px;
+                height:80px; 
+                margin-right: 10px;
                 position:absolute;
-                margin-left:1200px; 
-                margin-top: 50px;
+                right: 0%;
+                top: 2%;
             }
             .titulo{
                 text-align:center;
@@ -72,14 +82,20 @@
                 padding: 25px;
                 width: 50%;
             }
+            #dataCentro{
+                text-align: center;
+            }
             .tabela3{
                 border-style: solid;
                 border-width: 2px;
                 width: 50%;
+                padding: 0cm 3.5pt 0cm 3.5pt;
             }
             .celulaFixa{
                 width: 80px;
                 height: 26px;
+                margin: 0px;
+                padding: 0cm 3.5pt 0cm 3.5pt;
             }
             #row{
                 border-bottom-style: solid;
@@ -94,7 +110,9 @@
 
         <div class="img">
             <img id="logo_ifpe" src="imagens/logo_ifpe.png"> 
-            <img  id="logo_minist" src="imagens/ministerio_edu.gif">
+            <div class="centro">
+                <img  id="logo_minist" src="imagens/ministerio_edu.gif">
+            </div>
             <img id="logo_pronatec" src="imagens/logo_pronatec.png">
 
         </div>
@@ -109,38 +127,34 @@
 
         <table border="1" style="width:100%">
             <tr>
-                <td>PROFESSOR:</td>
+                <td width=110>PROFESSOR:</td>
                 <td colspan="2">  </td>
-                <td>CRUSO:</td>
-                <td colspan="2">  </td>
+                <td width=150 colspan="3">CRUSO:</td>
             </tr>
             <tr>
-                <td>SIAPE:</td>
-                <td>  </td>
-                <td>C.H. DO <br> 
-                    CURSO:</td>
-                <td>  ----- </td>
-                <td>C.H. DO <br> PROFESSOR</td>
-                <td> ----- </td>
+                <td width=120>  </td>
+                <td width=170 height=10>SIAPE:</td>
+                <td width=150 colspan="2">C.H. DO CURSO:</td>
+                <td colspan="2">C.H. DO PROFESSOR</td>
             </tr>
 
             <tr>
-                <td>COMPONENTE<br> CURRICULAR:</td>
+                <td width=200 >COMPONENTE CURRICULAR:</td>
                 <td colspan="2">  </td>
-                <td colspan="2">TURNO</td>
-                <td colspan="2">  </td>
+                <td width="150" colspan="2">TURNO:          Manhã (      )         Tarde (       )         Noite
+			   (   )</td>
             </tr>
         </table>
 
         <br>
         <table class="tabela2" border="1">
             <tr>
-                <td rowspan="2" colspan="1">Nº</td>
-                <td rowspan="2" colspan="13"> ALUNO </td>
-                <td colspan="2">MÊS</td>
+                <td id="dataCentro" rowspan="2" colspan="1">Nº</td>
+                <td width="250" id="dataCentro" rowspan="2" colspan="13"> ALUNO </td>
+                <td style="padding: 0.1cm 3.5pt 0cm 3.5pt;" id="dataCentro" colspan="2">MÊS</td>
             </tr>
             <tr>
-                <td colspan="2">DIA</td>
+                <td style="padding: 0.1cm 3.5pt 0cm 3.5pt;" id="dataCentro" colspan="2">DIA</td>
             </tr>
             <tr class="celulaFixa">
                 <td id="normal">1</td>
@@ -151,9 +165,9 @@
 
         </table>
         <div>
-            <table class="tabela3" border="1">  
+            <table class="tabela3" >  
                 <tr class="celulaFixa">
-                    <td  id="linha_left" class="linha_top" colspan="16">OUTUBRO/2015</td>
+                    <td height="12"  id="linha_left" class="linha_top" colspan="16">OUTUBRO/2015</td>
                 </tr>
                 <tr id="row" class="celulaFixa">
                     <td>  </td>
