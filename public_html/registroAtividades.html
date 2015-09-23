@@ -9,17 +9,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <style>
+            
+            .total
+            {
+               
+               width: 950px;
+               position: absolute;
+			   
+            }
+			
+			
+			
+            
             table, th, td {
                 border: 1px solid black;
                 border-collapse: collapse;
                 font-weight: bold;
-                font-size: 11px;
+                font-size: 14px;
+				line-height: 15px;
             }
             #normal{
                 font-weight: normal;
-                font-size: 10px;
+				font-family: Calibri;
+                font-size: 11pt;
+                text-align: left;
+				line-height: 16px;
+				
             }
             .linha_top{
+                padding: 0px;
                 border-top-width: 3px;
                 border-top-style: solid;
             }
@@ -32,19 +50,19 @@
             }
             .img{
                 height:100px;
+				margin-bottom: 40px;
             }
             .centro{
-                background: blue;
                 margin: 0 auto;
                 width: 50%;
             }
             #logo_ifpe{ 
-                width:200px;
-                height:80px; 
-                margin-left: 10px;
+                width:215px;
+                height:90px; 
                 position: absolute;
                 left: 0%;
-                top: 2%;
+                top: 0%;
+				margin-left:10px;
 
             }
 
@@ -52,23 +70,27 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width:150px;
-                height:80px; 
-                /*                position: relative;
-                                left: 40%;
-                                top: 2%;*/
+                width:155px;
+                height:90px; 
+/*                position: relative;
+                left: 40%;
+                top: 2%;*/
             }
             #logo_pronatec{
-                width:200px;
-                height:80px; 
-                margin-right: 10px;
+                width:215px;
+                height:99px; 
                 position:absolute;
                 right: 0%;
-                top: 2%;
+                top: 0%;
+				margin-right: 10px;
             }
             .titulo{
                 text-align:center;
                 font-size:small;
+                margin-top: -4%;
+				font-family: Arial;
+				font-weight: bold;
+				font-size: 8pt;
             }
             h1{
                 font-size: medium;
@@ -76,44 +98,75 @@
             .rodape{
                 float: none;
                 text-align: center;
+				margin-top: 2%;
+				font-family: Times New Roman;
+				font-size: 12pt;
+				
             }
             .tabela2{
                 float: left;
                 padding: 25px;
-                width: 50%;
+                width: 475px;
                 border: none;
+				
+				
+				
             }
+            
+			
+           
+            
             #dataCentro{
                 text-align: center;
             }
             .tabela3{
                 border-style: solid;
                 border-width: 2px;
-                width: 50%;
-                padding: 0cm 3.5pt 0cm 3.5pt;
-                border-collapse: collapse;
+                width: 475px;
+				
+               
             }
+			
+			
+			
             .celulaFixa{
                 width: 80px;
-                height: 5px;
                 margin: 0px;
+				
+                
             }
             #row{
                 border-bottom-style: solid;
                 border-width: 2px;
-
             }
-
+            .divisaTabela{
+                width: 3px;
+                border-top: none;
+                border-bottom: none;
+                border-right: none;
+                
+            }
+            
+            .espacoTD
+            {
+              height:16px; 
+					
+            }
+	
         </style>
 
     </head>
-    <body>
-
+    <body style="margin: auto">
+        
+        <div class="total">
+                <img id="logo_pronatec" src="imagens/logo_pronatec.png">
 
         <div class="img">
             <img id="logo_ifpe" src="imagens/logo_ifpe.png"> 
-            <img  id="logo_minist" src="imagens/ministerio_edu.gif">
-            <img id="logo_pronatec" src="imagens/logo_pronatec.png">
+            <div class="centro">
+                <img  id="logo_minist" src="imagens/ministerio_edu.gif">
+            </div>
+            
 
         </div>
         <div class="titulo">
@@ -121,9 +174,10 @@
             Programa Nacional de Acesso ao Ensino Técnico e Emprego <br>
             Instituto Federal de Educação, Ciência e Tecnologia de Pernanbuco Campus Recife <br>
 
-            <h1>DIÁRIO DE CLASSE - REGISTRO DE ATIVIDADES</h1>
+            <h1 style="font-family: Calibri; font-size: 16pt;">DIÁRIO DE CLASSE - ATA DE FREQUENCIA</h1>
         </div>
 
+ 
         <table border="1" style="width:100%">
             <tr>
                 <td>DATA</td>
@@ -332,11 +386,13 @@
             </tr>
     </table>
 
-<br>
-<div class="rodape">
-    Av. Prof Luiz Freire, 500 Cidade Universitária - Recife/PE - CEP:50740-540 Telefone:(81) 2125-1672 <br>
-    E-mail: pronatec@recife.ifpe.edu.br
-</div>
+<br>        
 
-</body>
+        <br>
+        <div class="rodape">
+            Av. Prof Luiz Freire, 500 Cidade Universitária - Recife/PE - CEP:50740-540 Telefone:(81) 2125-1672 <br>
+            E-mail: pronatec@recife.ifpe.edu.br
+        </div>
+        </div>
+    </body>
 </html>
